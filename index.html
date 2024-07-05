@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Players Profile - Football Club</title>
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: white;
+         color: black;
+     }
+
+     /* Container for the content */
+     .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+     }
+
+     /* Basic responsive grid */
+     .row {
+         display: flex;
+         flex-wrap: wrap;
+         margin: -10px;
+     }
+
+     .col {
+         flex: 1;
+         padding: 10px;
+     }
+
+     header {
+         background-color: black;
+         color: white;
+         padding: 1rem 0;
+         text-align: center;
+     }
+
+     nav ul {
+         list-style-type: none;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         gap: 1rem;
+         margin: 0;
+     }
+
+     nav ul li {
+         display: inline;
+     }
+
+     nav ul li a {
+         color: white;
+         text-decoration: none;
+         padding: 0.5rem 1rem;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+     }
+
+     nav ul li a:hover,
+     nav ul li a.active {
+         background-color: white;
+         color: black;
+     }
+
+     section {
+         padding: 4%;
+         margin: 4rem;
+         border: 3px solid black;
+     }
+
+     h2 {
+         border-bottom: 2px solid black;
+         padding-bottom: 1rem;
+     }
+
+     footer {
+         background-color: black;
+         color: white;
+         text-align: center;
+         padding: 1rem 0;
+         position: fixed;
+         width: 100%;
+         bottom: 0;
+     }
+
+     .coach, .player {
+         border: 1px solid black;
+         padding: 1rem;
+         margin: 1rem 0;
+     }
+
+     /* Media queries for different screen sizes */
+
+     /* Mobile phones in portrait and landscape */
+     @media (max-width: 576px) {
+         .col {
+             flex: 100%;
+         }
+
+         nav ul {
+             flex-direction: column;
+             gap: 0.5rem;
+         }
+
+         section {
+             margin: 2rem 0;
+             padding: 2%;
+         }
+     }
+
+     /* Small devices (tablets) in portrait */
+     @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+         .col {
+             flex: 100%;
+         }
+
+         nav ul {
+             flex-direction: row;
+             gap: 1rem;
+         }
+
+         section {
+             margin: 3rem 0;
+             padding: 3%;
+         }
+     }
+
+     /* Small devices (tablets) in landscape */
+     @media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Medium devices (small laptops/desktops) in portrait */
+     @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Medium devices (small laptops/desktops) in landscape */
+     @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+         .col {
+             flex: 33.33%;
+         }
+     }
+
+     /* Large devices (large laptops/desktops) in portrait */
+     @media (min-width: 1025px) and (max-width: 1200px) and (orientation: portrait) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Large devices (large laptops/desktops) in landscape */
+     @media (min-width: 1025px) and (max-width: 1200px) and (orientation: landscape) {
+         .col {
+             flex: 25%;
+         }
+     }
+
+     /* Extra large devices in portrait and landscape */
+     @media (min-width: 1201px) {
+         .col {
+             flex: 25%;
+         }
+     }
+    </style>
+</head>
+<body background-colour="white">
+    <header>
+        <h1> <img src="young.jpg.jpeg" width="50">YOUNG HEROES FC <img src="young.jpg.jpeg" width="50"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="player profile.html">Players Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>
+            <u>WELCOME TO YOUNG HEROES FC</u>
+        </h2>
+        <p>Stay updated with the latest news and events here. We are dedicated to bringing you the best football experience.</p>
+        <p>Our club has a rich history and a bright future. Join us in celebrating the beautiful game and supporting our talented players and coaches.</p>
+        <p>We are thrilled to have you join our dynamic and passionate community. At Young Heroes FC, we believe in nurturing talent, fostering teamwork, and instilling a love for the beautiful game in every player. Whether you’re here to develop your skills, make new friends, or simply enjoy the thrill of football, you are now part of a club that values dedication, sportsmanship, and the spirit of competition.</p>
+
+        <p>Our mission is to provide an environment where players of all ages and skill levels can grow and excel. From our youngest beginners to our seasoned veterans, every member of Young Heroes FC plays a crucial role in our success. We pride ourselves on our professional coaching staff, state-of-the-art facilities, and a supportive community that champions the growth of each individual both on and off the pitch.</p>
+    
+        <p>As a member of Young Heroes FC, you’ll have the opportunity to participate in a variety of training programs, competitive matches, and community events. We believe that football is more than just a game; it’s a way to build character, develop lifelong friendships, and inspire a sense of belonging. Our commitment to excellence is matched by our dedication to creating a positive and inclusive atmosphere where everyone can thrive.</p>
+    
+        <p>We encourage you to take full advantage of the resources and opportunities available to you. Whether you're aiming to refine your technique, improve your fitness, or simply enjoy the camaraderie of being part of a team, there is a place for you at Young Heroes FC. Your journey with us promises to be filled with challenges, triumphs, and countless memorable moments.</p>
+    
+        <p>Thank you for choosing Young Heroes FC. Together, we will strive for greatness, support one another, and celebrate our love for football. Let's make every moment on the pitch count and create unforgettable memories together.</p>
+    
+        <p>Go Young Heroes!</p>
+    </section>
+
+    <section id="team picture">
+        <h2>Team picture</h2>
+        <img src="team.jpg.jpg" width="300">
+        <p>The big day we got our recognition.</p>
+    </section>
+
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+
+    <p>As the new season approaches, Young Heroes FC is actively gearing up for the upcoming transfer window with a strategic focus on strengthening their squad. The club's management has been engaged in intense negotiations with various players and agents to secure key additions that will fortify the team across different positions.</p>
+
+    <p>The transfer strategy aims to build on the solid foundation laid down in previous seasons, leveraging both experienced players and promising young talents. Discussions have been fruitful, and the club is optimistic about finalizing deals that will enhance competitiveness in domestic and possibly international competitions.</p>
+
+    <p>Fans are eagerly awaiting official announcements as the transfer window progresses. Speculation is rife among supporters and pundits alike about potential signings that could significantly bolster the squad's depth and quality. The club's scouting network has been diligent in identifying targets who not only meet tactical needs but also align with the club's ethos of promoting talent and achieving sustainable success.</p>
+
+    <p>Young Heroes FC remains committed to a balanced approach in the transfer market, ensuring that any new additions complement the existing squad dynamics and contribute positively to team chemistry both on and off the pitch. The anticipation among fans is palpable, with expectations high for an exciting and competitive season ahead.</p>
+
+    <p>Stay tuned for updates as Young Heroes FC continues to navigate the complexities of the transfer window, aiming to make impactful signings that will resonate with supporters and strengthen the club's position in the footballing landscape.</p>
+
+        <p>Don't miss out on our upcoming matches and events. Check out the schedule and mark your calendar!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Football Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

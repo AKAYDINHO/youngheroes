@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Profile - Football Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+   
+        /* Container for the content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+   
+        /* Basic responsive grid */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+   
+        .col {
+            flex: 1;
+            padding: 10px;
+        }
+   
+        header {
+            background-color: black;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+   
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0;
+        }
+   
+        nav ul li {
+            display: inline;
+        }
+   
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+   
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: white;
+            color: black;
+        }
+   
+        section {
+            padding: 4%;
+            margin: 4rem;
+            border: 3px solid black;
+        }
+   
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 1rem;
+        }
+   
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+   
+        .coach, .player {
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+   
+        /* Media queries for different screen sizes */
+   
+        /* Mobile phones in portrait and landscape */
+        @media (max-width: 576px) {
+            .col {
+                flex: 100%;
+            }
+   
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+   
+            section {
+                margin: 2rem 0;
+                padding: 2%;
+            }
+        }
+   
+        /* Small devices (tablets) in portrait */
+        @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+            .col {
+                flex: 100%;
+            }
+   
+            nav ul {
+                flex-direction: row;
+                gap: 1rem;
+            }
+   
+            section {
+                margin: 3rem 0;
+                padding: 3%;
+            }
+        }
+   
+        /* Small devices (tablets) in landscape */
+        @media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+            .col {
+                flex: 50%;
+            }
+        }
+   
+        /* Medium devices (small laptops/desktops) in portrait */
+        @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+            .col {
+                flex: 50%;
+            }
+        }
+   
+        /* Medium devices (small laptops/desktops) in landscape */
+        @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+            .col {
+                flex: 33.33%;
+            }
+        }
+   
+        /* Large devices (large laptops/desktops) in portrait */
+        @media (min-width: 1025px) and (max-width: 1200px) and (orientation: portrait) {
+            .col {
+                flex: 50%;
+            }
+        }
+   
+        /* Large devices (large laptops/desktops) in landscape */
+        @media (min-width: 1025px) and (max-width: 1200px) and (orientation: landscape) {
+            .col {
+                flex: 25%;
+            }
+        }
+   
+        /* Extra large devices in portrait and landscape */
+        @media (min-width: 1201px) {
+            .col {
+                flex: 25%;
+            }
+        }
+       </style>
+   </head>
+   <body background-colour="white">
+       <header>
+        <h1> <img src="young.jpg.jpeg" width="40" >YOUNGHEROES FC <img src="young.jpg.jpeg" width="40"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="player profile.html">Players Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <h1>Young Heroes FC: A Local Football Legacy</h1>
+        <p><strong>Founded:</strong> 2014</p>
+        <p><strong>Location:</strong> [wajir]</p>
+        <p><strong>Club Colors:</strong> [white]</p>
+        <p><strong>Home Ground:</strong> [wajir stadium]</p>
+    
+        <h2>Overview</h2>
+        <p>Young Heroes FC, established in 2014, quickly emerged as a prominent local football club known for its dedication to nurturing talent and fostering a strong community spirit. The club was formed with a vision to provide a platform for young football enthusiasts to develop their skills and showcase their talents on a competitive stage.</p>
+    
+        <h2>Early Years</h2>
+        <p>In its initial years, Young Heroes FC faced the typical challenges of a newly-formed club. However, through perseverance and a passionate commitment to the sport, the club began to gain recognition. Early success in local tournaments helped build a strong foundation, and the club's reputation for developing young talent grew rapidly.</p>
+    
+        <h2>Community Engagement</h2>
+        <p>Community involvement has always been at the heart of Young Heroes FC. The club regularly organizes football clinics, community events, and outreach programs, aiming to engage with fans and encourage youth participation in sports. This has not only strengthened the club's ties with the local community but also inspired a new generation of footballers.</p>
+    
+        <h2>Achievements</h2>
+        <p>Despite being a relatively young club, Young Heroes FC has achieved significant milestones. Key achievements include securing promotions to higher divisions, and consistently performing well in regional tournaments. These accomplishments reflect the hard work and dedication of the players, coaching staff, and management.</p>
+    
+        <h2>Youth Development</h2>
+        <p>One of the cornerstones of Young Heroes FC is its focus on youth development. The club runs extensive youth training programs, providing professional coaching and facilities to young athletes. Many graduates of these programs have gone on to play at higher levels, showcasing the effectiveness of the club's development strategies.</p>
+    
+        <h2>Future Vision</h2>
+        <p>Looking ahead, Young Heroes FC aims to continue its upward trajectory by investing in infrastructure, enhancing its youth programs, and striving for greater success on the pitch. The club's long-term vision includes achieving higher league promotions, expanding its fan base, and making a lasting impact on the local football scene.</p>
+    
+        <h2>Conclusion</h2>
+        <p>Young Heroes FC stands as a testament to what can be achieved through passion, community spirit, and a commitment to excellence. As the club moves forward, it remains dedicated to its founding principles, inspiring young athletes, and bringing pride to its supporters.</p>
+    </body>
+  </section>
+
+    <footer>
+        <p>&copy; 2024 Football Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Players Profile - Football Club</title>
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: white;
+         color: black;
+     }
+
+     /* Container for the content */
+     .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+     }
+
+     /* Basic responsive grid */
+     .row {
+         display: flex;
+         flex-wrap: wrap;
+         margin: -10px;
+     }
+
+     .col {
+         flex: 1;
+         padding: 10px;
+     }
+
+     header {
+         background-color: black;
+         color: white;
+         padding: 1rem 0;
+         text-align: center;
+     }
+
+     nav ul {
+         list-style-type: none;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         gap: 1rem;
+         margin: 0;
+     }
+
+     nav ul li {
+         display: inline;
+     }
+
+     nav ul li a {
+         color: white;
+         text-decoration: none;
+         padding: 0.5rem 1rem;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+     }
+
+     nav ul li a:hover,
+     nav ul li a.active {
+         background-color: white;
+         color: black;
+     }
+
+     section {
+         padding: 4%;
+         margin: 4rem;
+         border: 3px solid black;
+     }
+
+     h2 {
+         border-bottom: 2px solid black;
+         padding-bottom: 1rem;
+     }
+
+     footer {
+         background-color: black;
+         color: white;
+         text-align: center;
+         padding: 1rem 0;
+         position: fixed;
+         width: 100%;
+         bottom: 0;
+     }
+
+     .coach, .player {
+         border: 1px solid black;
+         padding: 1rem;
+         margin: 1rem 0;
+     }
+
+     /* Media queries for different screen sizes */
+
+     /* Mobile phones in portrait and landscape */
+     @media (max-width: 576px) {
+         .col {
+             flex: 100%;
+         }
+
+         nav ul {
+             flex-direction: column;
+             gap: 0.5rem;
+         }
+
+         section {
+             margin: 2rem 0;
+             padding: 2%;
+         }
+     }
+
+     /* Small devices (tablets) in portrait */
+     @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+         .col {
+             flex: 100%;
+         }
+
+         nav ul {
+             flex-direction: row;
+             gap: 1rem;
+         }
+
+         section {
+             margin: 3rem 0;
+             padding: 3%;
+         }
+     }
+
+     /* Small devices (tablets) in landscape */
+     @media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Medium devices (small laptops/desktops) in portrait */
+     @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Medium devices (small laptops/desktops) in landscape */
+     @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+         .col {
+             flex: 33.33%;
+         }
+     }
+
+     /* Large devices (large laptops/desktops) in portrait */
+     @media (min-width: 1025px) and (max-width: 1200px) and (orientation: portrait) {
+         .col {
+             flex: 50%;
+         }
+     }
+
+     /* Large devices (large laptops/desktops) in landscape */
+     @media (min-width: 1025px) and (max-width: 1200px) and (orientation: landscape) {
+         .col {
+             flex: 25%;
+         }
+     }
+
+     /* Extra large devices in portrait and landscape */
+     @media (min-width: 1201px) {
+         .col {
+             flex: 25%;
+         }
+     }
+    </style>
+</head>
+<body background-colour="white">
+    <header>
+        
+        <h1> <img src="young.jpg.jpeg" width="40">YOUNG HEROES FC <img src="young.jpg.jpeg" width="40"></h1>
+        
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="players.html" class="active">Players Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="coach">
+        <h2>Coach Profile</h2>
+        <img src="coach.jpg" width="200"
+        <div class="coach">
+            <h3>Head Coach</h3>
+            <p>Name:abdishukri adan</p>
+            <p>Experience: 22 years</p>
+            <p>Nationality: Country kenya</p>
+        </div>
+    </section>
+
+
+    <section id="players">
+        <h2>Players Profile</h2>
+        <div class="player">
+            <h3>Ahmed 6</h3>
+            <img src="ahmed.jpg.jpeg" width="200">
+            <p>Position: defence</p>
+            <p>Age: 18</p>
+            <p>Nationality: Country kenya</p>
+        </div>
+    
+        <div class="player">
+            <h3>Kaloo 8</h3>
+            <Img src="1.jpg.jpg" width="200">
+            <p>Position: Midfielder</p>
+            <p>Age: 18</p>
+            <p>Nationality: Country kenya</p>
+        </div>
+        <div class="player">
+            <h3>sule 11</h3>
+            <img src="2.jpg.jpg" width="200">
+            <p>Position: forward</p>
+            <p>Age: 17</p>
+            <p>Nationality: Country kenya</p>
+        </div>
+        <div class="player">
+            <h3>Baller 26</h3>
+            <img src="3.jpg.jpg" width="200">
+            <p>Position: Defeence</p>
+            <p>Age: 18</p>
+            <p>Nationality: Country kenya</p>
+        </div>
+        <div class="player">
+            <h3>Xhaka 10</h3>
+            <img src="4.jpg.jpg" width="200">
+            <p>Position: Midfielder</p>
+            <p>Age: 19</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>De paul 5</h3>
+            <img src="5.jpg.jpg" width="200">
+            <p>Position: Midfielder</p>
+            <p>Age: 20</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>Barakati 1</h3>
+            <img src="6.jpg.jpg" width="200">
+            <p>Position:Goal keeper</p>
+            <p>Age: 17</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>kinow 3</h3>
+            <img src="7.jpg.jpg" width="200">
+            <p>Position: Forward</p>
+            <p>Age: 20</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>Maldini 4</h3> 
+            <img src="8.jpg.jpg" width="200">
+            <p>Position: Midfielder</p>
+            <p>Age: 18</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>Chiesa 20</h3>
+            <img src="9.jpg.jpg" width="200">
+            <p>Position: Defender</p>
+            <p>Age: 17</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>Achraf 2</h3>
+            <img src="10.jpg.jpg" width="200">
+            <p>Position: Goalkeeper</p>
+            <p>Age: 19</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+        <div class="player">
+            <h3>Neymar 11</h3>
+            <img src="ney.jpg" width="200">
+            <p>Position: Forward</p>
+            <p>Age: 19</p>
+            <p>Nationality: Country Kenya</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Young heroes Football Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
